@@ -9,9 +9,6 @@ on:
 permissions:
     contents: read
 
-env:
-    FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
     # ---------------------------------------------------------------------------
     # One job per problem — run in parallel, each function gets its own step.
@@ -20,6 +17,7 @@ jobs:
     problem-1:
         name: "Problem 1 — Basic Recursion"
         runs-on: ubuntu-latest
+        continue-on-error: true
         env:
             SOLUTION_MODE: ${{ github.repository == 'AFC-AI2C/summer-course' && github.event_name == 'workflow_dispatch' && 'true' || '' }}
         steps:
@@ -32,7 +30,6 @@ jobs:
             - run: pip install -r .github/python_tests/requirements.txt
 
             - name: "Recursive Squares"
-              continue-on-error: true
               run: >
                   pytest .github/python_tests/test_problem_set_5.py::TestRecursiveSquares
                   -v --tb=short --no-header --color=yes -s
@@ -40,6 +37,7 @@ jobs:
     problem-2:
         name: "Problem 2 — Multiple Recursion"
         runs-on: ubuntu-latest
+        continue-on-error: true
         env:
             SOLUTION_MODE: ${{ github.repository == 'AFC-AI2C/summer-course' && github.event_name == 'workflow_dispatch' && 'true' || '' }}
         steps:
@@ -52,7 +50,6 @@ jobs:
             - run: pip install -r .github/python_tests/requirements.txt
 
             - name: "Recipe class"
-              continue-on-error: true
               run: >
                   pytest .github/python_tests/test_problem_set_5.py::TestRecipeClass
                   -v --tb=short --no-header --color=yes -s
@@ -60,6 +57,7 @@ jobs:
     problem-3:
         name: "Problem 3 — Basic HTTP Requests"
         runs-on: ubuntu-latest
+        continue-on-error: true
         env:
             SOLUTION_MODE: ${{ github.repository == 'AFC-AI2C/summer-course' && github.event_name == 'workflow_dispatch' && 'true' || '' }}
         steps:
@@ -72,7 +70,6 @@ jobs:
             - run: pip install -r .github/python_tests/requirements.txt
 
             - name: "LyricAnalyzer class"
-              continue-on-error: true
               run: >
                   pytest .github/python_tests/test_problem_set_5.py::TestLyricAnalyzerClass
                   -v --tb=short --no-header --color=yes -s
@@ -80,6 +77,7 @@ jobs:
     problem-4:
         name: "Problem 4 — Using a REST API"
         runs-on: ubuntu-latest
+        continue-on-error: true
         env:
             SOLUTION_MODE: ${{ github.repository == 'AFC-AI2C/summer-course' && github.event_name == 'workflow_dispatch' && 'true' || '' }}
         steps:
@@ -92,7 +90,6 @@ jobs:
             - run: pip install -r .github/python_tests/requirements.txt
 
             - name: "Animal class"
-              continue-on-error: true
               run: >
                   pytest .github/python_tests/test_problem_set_5.py::TestAnimalClass
                   -v --tb=short --no-header --color=yes -s
