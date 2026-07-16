@@ -198,23 +198,150 @@
 # STUDY SESSION PRACTICE PROBLEMS 7/16/2026
 
 
-temp = float(input("What is the current temerapture?: "))
-raining = input("Is it raining ('yes'/'no'): ")
-
-if temp < 40:
-    output = Wear a coat!
-
-elif temp <= 60:
-    output = "Bring a jacket!"
-
-else:
-    output = "Enjoy the weather!"
-
-if raining == "yes"
-    output += "Bring an umprella"
 
 
+# temp = float(input("What is the current temerapture?: "))
+# raining = input("Is it raining ('yes'/'no'): ")
 
+# if temp < 40:
+#     output = "Wear a coat!"
+
+# elif temp <= 60:
+#     output = "Bring a jacket!"
+
+# else:
+#     output = "Enjoy the weather!"
+
+# if raining == "yes":
+#     output += "Bring an umprella"
+
+# print(output)
+
+
+
+
+
+
+
+
+
+# # # 2 FizzBuzz
+
+
+# start = int(input("Enter the start value: "))
+# stop = int(input("Enter the stop value: "))
+
+# def fizzBuzz(beginning: int, end: int) -> None:
+#     fizzBuzzes = 0
+#     for number in range (beginning,end+1):
+#         if number % 3 == 0 and number % 5 == 0:
+#             print("FizzBuzz")
+#             fizzBuzzes += 1
+
+#         elif number % 3 == 0:
+#             print("Fizz")
+
+#         elif number % 5 == 0:
+#             print("Buzz")
+        
+#         else:
+#             print(number)
+
+
+# amount = fizzBuzz(start, stop)
+
+# print(f"There are {amount} of fizzBuzzess in between and including {start} and {stop}.")
+
+
+
+
+
+# # # 3 Password Check
+
+digit_list = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+
+
+def password_checker(password: str) -> str:
+    hasdigit = false
+    password_len = len(password)
+    if password_len < 8:
+        return "Weak"
+    
+    else:
+        for letter in password:
+
+            #Check if the letter is equal to a digit
+            for digit in digit_list:
+                if letter == digit:
+                    hasDigit = True
+                    break
+            
+                
+            if letter not in == letter.upper():
+                hasUpperCase = True
+
+
+        if hasDigit and hasUpperCase: 
+            return "Strong"
+        
+        else:
+            return "Medium"
+
+
+user_password = input("enter a password (Make it strong!): ")
+password_strenght = password_checker(user_password)
+
+
+while password_strenght != "Strong":
+    print("The password strenght is {password_strenght}")
+    user_password = input("enter a password (Make it strong!): ")
+    password_strenght = password_checker(user_password)
+
+
+print(f"This password is {password_strenght}, great job!")
+
+
+
+
+
+
+
+
+
+# Problem 4 Grade Caculator ****CORRECT****
+
+
+
+
+
+# def letter_grade(score: float) -> str:
+
+#     if score >= 90:
+#         return("A")
+
+#     elif score >= 80:
+#         return("B")
+
+#     elif score >= 70:
+#         return("C")
+
+#     elif score >= 60:
+#         return("D")
+
+#     else:
+#         return("F")
+
+
+# students = int(input("How many grades are there to enter? "))
+# total_scores = 0 
+
+
+# for student in range(1, students+1):
+#     score =float(input(f"Enter student #{student}'s score: "))
+#     total_scores += score
+#     print(f"Student #{student} got a letter grade {letter_grade(score)}")
+
+# print(f"The class average was {total_scores/students}, this is a {letter_grade(total_scores/students)}")
 
 
 
