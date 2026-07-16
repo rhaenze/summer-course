@@ -108,7 +108,7 @@
 # #     print("The number is 50")
 
 
-# # print(random_number)
+# # # print(random_number)
 
 
 
@@ -116,73 +116,105 @@
 
 
 
-# # Functions In Class Exercies 1 
+# # # Functions In Class Exercies 1 
 
 
-# # # def rectangle_area (user_input1,user_input2)
-# # #     sum = user_input1 * user_input2
-# # #     return sum
-
-
-
-# # # Teacher typed
-
-
-# # def rect_area(len: int, wid: int) -> int:
-# #     return len * wid
-
-# # length = int(input("Enter the lenght: "))
-# # width = int(input("Enter the width: "))
-
-# # area1 = rect_area(length, width)
-# # print(area1)
+# # # # def rectangle_area (user_input1,user_input2)
+# # # #     sum = user_input1 * user_input2
+# # # #     return sum
 
 
 
+# # # # Teacher typed
 
-# # # # In class exercies #2 NEED TO CHECK WORKFLOW
 
-# # # def tip_function(total: float, percentage: float) -> float:
-# # #     percentage_by_100 = percentage/100
-# # #     tip_amount = total * percentage_by_100
-# # #     return tip_amount
+# # # def rect_area(len: int, wid: int) -> int:
+# # #     return len * wid
 
-# # # tip1 = tip (100,25)
-# # # print(tip1)
+# # # length = int(input("Enter the lenght: "))
+# # # width = int(input("Enter the width: "))
 
-# # # tip2 = (200,50)
-# # # print(tip2)
+# # # area1 = rect_area(length, width)
+# # # print(area1)
 
 
 
 
+# # # # # In class exercies #2 NEED TO CHECK WORKFLOW
 
+# # # # def tip_function(total: float, percentage: float) -> float:
+# # # #     percentage_by_100 = percentage/100
+# # # #     tip_amount = total * percentage_by_100
+# # # #     return tip_amount
 
-# # In Class Exercies #4 (characters prompt)
+# # # # tip1 = tip (100,25)
+# # # # print(tip1)
 
-
-
-
-# def has_more_characters ("user_input1", "user_input2")
-#     len
-
-# user_input1 = float("PLease enter your first string: ")
-# user_input2 = float("PLease enter your second string: ")
+# # # # tip2 = (200,50)
+# # # # print(tip2)
 
 
 
 
 
 
-# Teacher's code
+# # # In Class Exercies #4 (characters prompt)
 
 
-def has_more_characters(string1 : str, string2 : str) -> str:
-    length1 = len(string1)
-    lenght2 = len(string2)
-    if length1 > lenght2:
-        return string1
-    elif lenght2 > length1:
-        return string2
-    else:
-        return "They are equal"
+
+
+# # def has_more_characters ("user_input1", "user_input2")
+# #     len
+
+# # user_input1 = float("PLease enter your first string: ")
+# # user_input2 = float("PLease enter your second string: ")
+
+
+
+
+
+
+# # Teacher's code
+
+
+# def has_more_characters(string1 : str, string2 : str) -> str:
+#     length1 = len(string1)
+#     lenght2 = len(string2)
+#     if length1 > lenght2:
+#         return string1
+#     elif lenght2 > length1:
+#         return string2
+#     else:
+#         return "They are equal"
+
+
+
+
+
+
+
+
+
+# STUDY SESSION PRACTICE PROBLEMS 7/16/2026
+
+
+temp = float(input("What is the current temerapture?: "))
+raining = input("Is it raining ('yes'/'no'): ")
+
+if temp < 40:
+    output = Wear a coat!
+
+elif temp <= 60:
+    output = "Bring a jacket!"
+
+else:
+    output = "Enjoy the weather!"
+
+if raining == "yes"
+    output += "Bring an umprella"
+
+
+
+
+
+
