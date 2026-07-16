@@ -449,12 +449,12 @@
 
 
 
-#20 Creat a list with Range
+# #20 Creat a list with Range
 
 
-even_numbers = list(range(0, 21, 2))
+# even_numbers = list(range(0, 21, 2))
 
-print(even_numbers)
+# print(even_numbers)
 
 
 
