@@ -83,20 +83,28 @@
 # print(f"The amount to tip is ${tip(100, 25)}")
 
 
-# print(f"The amount to tip is ${tip(200, 50)}")
+# # print(f"The amount to tip is ${tip(200, 50)}")
 
 
-def has_more_characters(string1 : str, string2: str) -> str:
-    length1 = len(string1)
-    length2 = len(string2)
-    if len(string1) > len(string2):
-        return f"{string1} has more characters"
-    elif length2 > length1:
-        return f"{string2} has more characters"
-    else:
-        return "They are equal"
+# def has_more_characters(string1 : str, string2: str) -> str:
+#     length1 = len(string1)
+#     length2 = len(string2)
+#     if len(string1) > len(string2):
+#         return f"{string1} has more characters"
+#     elif length2 > length1:
+#         return f"{string2} has more characters"
+#     else:
+#         return "They are equal"
     
-longer_greeting = has_more_characters([1,2,3], [1])
+# longer_greeting = has_more_characters([1,2,3], [1])
 
-print(f"{longer_greeting}")
+# print(f"{longer_greeting}")
     
+
+
+
+
+
+
+
+
