@@ -106,10 +106,10 @@
 
 
 
-#1 MANIPULATING FILES PRACTICAL : Write a Python script that will write 100 random integers ranging from 50 to 100 into a file.  Each integer should be on a separate line.
+# #1 MANIPULATING FILES PRACTICAL : Write a Python script that will write 100 random integers ranging from 50 to 100 into a file.  Each integer should be on a separate line.
 
 
-#Code to create file.txt with 100 random integers
+# #Code to create file.txt with 100 random integers
 
 # import random 
 # with open('file.txt', 'w') as file:
@@ -118,32 +118,38 @@
 #         file.write(str(random_number) + "\n")
 
 
-#Open this file, find max, min, and average
+# #Open this file, find max, min, and average
 
-with open('file.txt', 'r') as input_file:
-    lines = input_file.readlines()
-    # lines_stripped = [line.strip for line in lines]
-    # print(lines)
-    count = 0 
-    min = 1000
-    max = 0
-    sum = 0
-    for line in lines:
-        amount = int(line)
-        sum += amount
-        count += 1 
-        if amount > max:
-            max = amount
-        if amount < min:
-            min = amount
-    average = sum/count
+# with open('file.txt', 'r') as input_file:
+#     lines = input_file.readlines()
+#     # lines_stripped = [line.strip for line in lines]
+#     # print(lines)
+#     count = 0 
+#     min = 1000
+#     max = 0
+#     sum = 0
+#     for line in lines:
+#         amount = int(line)
+#         sum += amount
+#         count += 1 
+#         if amount > max:
+#             max = amount
+#         if amount < min:
+#             min = amount
+#     average = sum/count
 
-print(f"Max: {max}, Min: {min}, Average: {average}")
+# print(f"Max: {max}, Min: {min}, Average: {average}")
 
 
 ## CODE ABOVE IS CORRECT. Will need to stop the code that creates the file if we want to get the same numbers. It is rewriting the file everytime so that is why we are getting a different average everytime.
 
 
+
+
+
+
+# Hands-On #2 in PYTHON_FILE_IO.MD
+https://github.com/shafe123/AI2C-python-files.git
 
 
 
