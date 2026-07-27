@@ -171,6 +171,6 @@ else:
 print("The main.py did not crash")
 
 
-#Else and finally options aren't madatory but are optional code that can be added into to make the program run 
+# Else and finally options aren't madatory but are optional code that can be added into to make the program run 
 
 
