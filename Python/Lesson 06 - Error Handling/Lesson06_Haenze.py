@@ -151,14 +151,26 @@
 
 
 
+#Code example using the try block that allows you to plan for errors gracefully
 
-for number in range(1,101):
-    if number % 3 == 0 and number % 5 == 0:
-        print("FizzBuzz")
-    elif number % 5 == 0:
-        print("Buzz")
-    elif number % 3 == 0:
-        print("Fizz")
-    else:
-        print(number)
+from area import rect_area
+
+try:
+    len = float(input("Enter the length:  "))
+    wid = float(input("Enter the width:  "))
+    rect_area(len, wid)
+
+#The below code shows that if a value error occurs, not to crash the program, but to print this. This would happen if the user but in a letter for example for width.
+except ValueError:
+    print("There was some sort of error")
+
+else: 
+    print("No errors!!!")
+
+#This code is telling the script to run instead of pushing a syntex error message
+print("The main.py did not crash")
+
+
+#Else and finally options aren't madatory but are optional code that can be added into to make the program run 
+
 
