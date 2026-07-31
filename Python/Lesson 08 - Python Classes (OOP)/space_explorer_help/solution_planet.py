@@ -54,3 +54,8 @@ if __name__ == "__main__":
     
     test_craft = Spacecraft("Testing", 1000, 0.50)  # new spacecraft
     print(test_craft.calculate_required_fuel(test_planet - second_planet))  # should be 200
+
+
+
+
+    
