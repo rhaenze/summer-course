@@ -3,7 +3,6 @@ Book module for library management system.
 Handles book data and validation.
 """
 
-
 class Book:
     """Represents a book in the library."""
 
